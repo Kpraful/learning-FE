@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour+Convergence&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 164px;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        .right ul li {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .right ul li svg {
+            padding-left: 5px;
+        }
+
+        .grid-area {
+            display: grid;
+        }
+
+        .text-area {
+            /* background-color: beige; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            width: 99vw;
+        }
+
+        .text-area button {
+            height: 50px;
+            border-radius: 5px;
+            background-color: #09a6bd;
+            border: none;
+        }
+
+        .text-area button:hover {
+            background-color: #56d0e2;
+            border: none;
+        }
+
+        .button-text {
+            color: white;
+            font-size: 15px;
+            font-family: "Roboto";
+        }
+
+        .para-text {
+            font-family: 'ROBOTO';
+            font-size: 23px;
+        }
+
+        .grid-area {
+            display: grid;
+            /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 99vw;
+            padding: 25px 50px;
+            /* padding-top: 25px; */
+            border-color: black;
+        }
+
+        .grid-item {
+            /* width: 300px; */
+            /* height: 200px; */
+            /* border: 2px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* padding-left: 60px; */
+        }
+
+        .grid-font {
+            font-weight: bold;
+            font-size: 25px;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+
+        /* 
+        .grid-item span, .grid-item p{
+            margin: 0;
+            padding: 0;
+        } */
+        .grid-button {
+            cursor: pointer;
+            width: 110px;
+            height: 40px;
+            border: none;
+            background-color: rgb(111, 228, 111);
+            border-radius: 5px;
+        }
+
+        .grid-button:hover{
+            background-color: rgb(28, 138, 28);
+        }
+
+        .Sha-text {
+            font-size: x-small;
+            /* padding: 0;
+            margin: 0; */
+            text-align: center;
+
+        }
+
+        .grid-button-text {
+            color: white;
+        }
+
+        #sha {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="UE-Logo-1.webp" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Product <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="19" height="19"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>For business <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="19" height="19"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg> </li>
+                    <li>Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="19" height="19"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Support <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="19" height="19"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Our company <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="19" height="19"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><img src="Lang.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="text-area">
+        <p style="font-family: Roboto;">
+        <h1>Download <strong>UltraEdit</strong> for Windows&nbsp; <a
+                href="https://www.g2.com/products/ultraedit/reviews/" target="__blank" rel="noopener"><img
+                    decoding="async" src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" width="112"
+                    height="32" alt="Reviews" class="wp-image-1613 alignnone size-full"></a></h1>
+        <p class="para-text">Download and try UltraEdit before you buy it! This download includes the full Windows
+            version of the text
+            editor.</p>
+        </p>
+        <button>
+            <span class="button-text"> DOWNLOAD MAC OR LINUX VERSION </span>
+        </button>
+    </div>
+    <div class="grid-area">
+        <div class="grid-item">
+            <span class="grid-font"> English </span>
+            <button class="grid-button">
+                <span class="grid-button-text"> Download 64-bit </span>
+            </button>
+            <span id="sha">SHA256</span>
+            <p class="Sha-text">
+                3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</p>
+        </div>
+        <div class="grid-item">
+            <span class="grid-font"> English </span>
+            <button class="grid-button">
+                <span class="grid-button-text"> Download 64-bit </span>
+            </button>
+            <span id="sha">SHA256</span>
+            <p class="Sha-text">
+                3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</p>
+        </div>
+        <div class="grid-item">
+            <span class="grid-font"> English </span>
+            <button class="grid-button">
+                <span class="grid-button-text"> Download 64-bit </span>
+            </button>
+            <span id="sha">SHA256</span>
+            <p class="Sha-text">
+                3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</p>
+        </div>
+        <div class="grid-item">
+            <span class="grid-font"> English </span>
+            <button class="grid-button">
+                <span class="grid-button-text"> Download 64-bit </span>
+            </button>
+            <span id="sha">SHA256</span>
+            <p class="Sha-text">
+                3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</p>
+        </div>
+        <div class="grid-item">
+            <span class="grid-font"> English </span>
+            <button class="grid-button">
+                <span class="grid-button-text"> Download 64-bit </span>
+            </button>
+            <span id="sha">SHA256</span>
+            <p class="Sha-text">
+                3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</p>
+        </div>
+        <div class="grid-item">
+            <span class="grid-font"> English </span>
+            <button class="grid-button">
+                <span class="grid-button-text"> Download 64-bit </span>
+            </button>
+            <span id="sha">SHA256</span>
+            <p class="Sha-text">
+                3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</p>
+        </div>
+        <div class="grid-item">
+            <span class="grid-font"> English </span>
+            <button class="grid-button">
+                <span class="grid-button-text"> Download 64-bit </span>
+            </button>
+            <span id="sha">SHA256</span>
+            <p class="Sha-text">
+                3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</p>
+        </div>
+        <div class="grid-item">
+            <span class="grid-font"> English </span>
+            <button class="grid-button">
+                <span class="grid-button-text"> Download 64-bit </span>
+            </button>
+            <span id="sha">SHA256</span>
+            <p class="Sha-text">
+                3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</p>
+        </div>
+        <div class="grid-item">
+            <span class="grid-font"> English </span>
+            <button class="grid-button">
+                <span class="grid-button-text"> Download 64-bit </span>
+            </button>
+            <span id="sha">SHA256</span>
+            <p class="Sha-text">
+                3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

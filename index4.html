@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width:480px){
+            body{
+                background-color: blue;
+            }
+        }
+        :root{
+            --first-colour : rgb(243, 237, 237) ;
+            --second-colour: rgb(38, 202, 202);
+            --third-colour: hsl(0, 83%, 27%);
+            --fourth-colour: rgb(19, 23, 154);
+            --fifth-colour: rgb(255, 255, 255)
+        }
+        .nav-bar{
+            background-color: rgb(27, 26, 28);
+            border-radius: 7px;
+            padding: 5px;
+            display: flex;
+            width: 360px;
+        }
+        .first-content{
+            padding: 10px;
+            background-color: var(--first-colour);
+        }
+        .second-content{
+            padding: 10px;
+            background-color: var(--second-colour) ;
+        }
+        .third-content{
+            padding: 10px;
+            background-color: var(--third-colour);
+        }
+        .fourth-content{
+            padding: 10px;
+            background-color: var(--fourth-colour);
+        }
+        .fifth-content{
+            padding: 10px;
+            background-color: var(--fifth-colour) ;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <span class="first-content">Home</span> 
+        <span class="second-content">About</span> 
+        <span class="third-content">Contact</span> 
+        <span class="fourth-content">SiteName</span> 
+        <span class="fifth-content">NewName</span> 
+    </nav>
+</body>
+</html>

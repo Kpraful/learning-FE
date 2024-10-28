@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root{
+            --colour: peru;
+        }
+        .nav-bar {
+            background-color: aquamarine;
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-evenly;
+            position: sticky;
+            top: 0;
+        }
+
+        .parent-box {
+            background-color: #FBE9E7;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .child-div{
+            background-color:var(--colour);
+            height: 500px;
+            width: 500px;
+            margin: 30px;
+        }
+
+        .footer-design{
+            display: flex;
+            justify-content: space-around;
+            background-color: cadetblue;
+        }
+        .welcome-div{
+            padding: 20px;
+            background-color: yellowgreen;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        .font-class{
+            font-size: 20px;
+        }
+        .image-class{
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            bottom: 20px; /* Position at the bottom */
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <span class="nav-item">Home</span>
+        <span class="nav-item">Menu</span>
+        <span class="nav-item">Icon </span>
+        <span class="nav-item">Profile</span>
+
+    </nav>
+    <div class="parent-box">
+       <div class="child-div">
+       </div>
+       <div class="child-div">
+       </div>
+    </div>
+    <div class="welcome-div">
+        <p class="font-class"> Welcome to my website</p>
+    </div>
+    <div class="image-class">
+        <img src="copyright-symbol.webp" alt="symbol" width="50px" height="50px">
+    </div>
+    <footer class="footer-design">
+        <span>Home</span>
+        <span>About</span>
+        <span>Copyright</span>
+        <span>Contact</span>
+    </footer>
+
+</body>
+</html>
