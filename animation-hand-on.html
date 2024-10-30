@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball with Combined Keyframes</title>
+    <style>
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            background-color: blue;
+            overflow: hidden; /* Prevent overflow of the ball */
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: bounce-move 2s infinite;
+        }
+
+        @keyframes bounce-move {
+            0% {
+                transform: translateY(0); 
+                animation-timing-function: ease-out; 
+            }
+            20% {
+                transform: translate(60px, -150px); 
+                animation-timing-function: ease-in; 
+            }
+            40% {
+                transform: translate(100px, 2px); 
+                animation-timing-function: cubic-bezier(0.75, 0, 1, 1); 
+            }
+            60% {
+                transform: translate(140px, -100px);
+                animation-timing-function: ease-out;
+            }
+            80% {
+                transform: translate(170px, 0); 
+                animation-timing-function: cubic-bezier(0.75, 0, 1, 1);
+            }
+            100% {
+                transform: translate(200px, 0); 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
