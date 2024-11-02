@@ -35,6 +35,10 @@
     background-origin: border-box;
     background-size: cover;
     background-position: 0% 15%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 100vw;
 }
 
 .logo {
@@ -47,22 +51,25 @@
 
 .nav-flex-box {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .flex-container-nav {
     width: 50vw;
     display: flex;
     justify-content: end;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
 .logo-flexbox {
-    width: 50vw;
+    width: 30vw;
 }
 
 .nav-flexbox {
     display: flex;
     padding: 0 9.25rem;
+    flex-wrap: wrap;
 }
 
 .language-button {
