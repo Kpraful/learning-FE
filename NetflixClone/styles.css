@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-top: 28px;
+}
+.above-black-box{
+    position: relative;
+    z-index: 2;
+}
+
+.box {
+    background-color: #0f0c0ccc;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.background {
+    background-image: url(./Assets/Images/background-image.jpg);
+    height: 96vh;
+    background-origin: border-box;
+    background-size: cover;
+    background-position: 0% 15%;
+}
+
+.logo {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    display: block;
+}
+
+.nav-flex-box {
+    display: flex;
+}
+
+.flex-container-nav {
+    width: 50vw;
+    display: flex;
+    justify-content: end;
+}
+
+.logo-flexbox {
+    width: 50vw;
+}
+
+.nav-flexbox {
+    display: flex;
+    padding: 0 9.25rem;
+    ;
+}
