@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "helvetoca-neue-5";
+    src: url(./Assets/fonts/helvetica-neue-5/HelveticaNeueBlack.otf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -54,5 +58,18 @@
 .nav-flexbox {
     display: flex;
     padding: 0 9.25rem;
-    ;
+}
+
+.language-button{
+    width: 123.85px;
+    color: antiquewhite;
+    border-radius: 5px;
+    background-color: unset;
+    font-family: "Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif";
+    font-size: 18px;
+    height: 30px;
+    border-color: rgba(128,128,128,0.7);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4px;
 }
