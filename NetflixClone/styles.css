@@ -20,7 +20,7 @@
 .box {
     /* background: linear-gradient(rgb(39, 41, 40),rgba(15, 12, 12, 0.8)); */
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.79) 8.333%, rgba(0, 0, 0, 0.756) 16.67%, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0.622) 33.33%, rgba(0, 0, 0, 0.52) 41.67%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.28) 58.33%, rgba(0, 0, 0, 0.178) 66.67%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.044) 83.33%, rgba(0, 0, 0, 0.01) 91.67%, rgba(0, 0, 0, 0) 100%) */
-    background-color: #0f0c0ccc;
+    background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.8500) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -31,7 +31,7 @@
 
 .background {
     background-image: url(./Assets/Images/background-image.jpg);
-    height: 96vh;
+    height: 100vh;
     background-origin: border-box;
     background-size: cover;
     background-position: 0% 15%;
@@ -95,6 +95,109 @@
     font-weight: 600;
 }
 
-.main-body{
-    
+.main-body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    /* border: 2px solid red; */
+    height: 86vh;
+    align-items: center;
+    flex-direction: column;
+
 }
+
+.unlimited-movie-class {
+    width: 36vw;
+}
+
+.mid-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* border:2px solid red; */
+    gap: 15px;
+}
+
+.unlimited-movie-class h1 {
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-size: 3.5rem;
+    font-family: "Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif";
+    margin-bottom: 1rem;
+}
+
+.start-membership-class {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    font-family: "Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif";
+}
+
+.mid-button {
+    display: flex;
+    width: 100%;
+    /* height: 56px; */
+    gap: 20px;
+    flex-direction: column;
+
+}
+
+.input {
+    display: flex;
+    gap: 6px
+}
+
+.input-class {
+    background: rgb(255 255 255 / 8%);
+    border-radius: 4px;
+    width: 60%;
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0.5rem;
+    border: 1px solid white;
+    height: 34px;
+    color: white;
+}
+
+.button-class {
+    width: 40%;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.ready-to-watch-class {
+    color: white;
+    font-size: 18px;
+    text-align: end;
+    font-weight: 500;
+}
+/* 
+.curve-container{
+    background-color: red;
+    border:2px solid white;
+    height: 198px;
+    width: auto;
+} */
+/* border-radius: 0 0 50% 50%; */
+
+/* .curve-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background: inherit;
+  } */
