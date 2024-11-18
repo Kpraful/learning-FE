@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Insertion</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            /* background-color: rgb(3, 22, 3) */
+
+        }
+
+        .mid-div {
+            height: 50vh;
+            width: 30vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .button-div {
+            border-radius: 2px;
+            background-color: rgb(174, 164, 164);
+            border-radius: 9px;
+            height: 100px;
+            width: 100px;
+            border-color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mid-div">
+            <!-- Content will be dynamically inserted here -->
+            <button class="button-div">Start <br> Hacking</button>
+        </div>
+    </div>
+
+    <script>
+        let button = document.querySelector(".button-div");
+        let mid_div = document.querySelector(".mid-div");
+        const arrayLines = [
+            "Initializing Hacking",
+            "Reading your Files",
+            "Password files Detected",
+            "Sending all passwords and personal files to server",
+            "Cleaning up"
+        ]
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        async function hackingStarting(index) {
+            const randomDelay = Math.random() * 10000; // Random delay between 0 and 10 seconds
+            // Wait for the random delay
+            await sleep(randomDelay);
+            const newPara = document.createElement('p');
+            newPara.innerHTML = `${index}`;
+            newPara.style.color = "green";
+            newPara.style.fontSize = "34px"
+            mid_div.appendChild(newPara);
+            let count=0;
+            var t = setInterval(()=>{
+                count++;
+                count=count%4;
+                mid_div.lastElementChild.innerHTML = `${index}${'.'.repeat(count)}`;
+                // console.log(count);
+            },700)
+
+        }
+
+        button.addEventListener('click', async function () {
+            document.querySelector(".button-div").remove();
+            for (const line of arrayLines) {
+                await hackingStarting(line); // Display each line one by one
+            }
+            
+            clearInterval(t);
+        })
+    </script>
+</body>
+
+</html>
+<!-- // Initializing Hacking...
+// Reading your Files...
+// Password files Detected...
+// Sending all passwords and personal files to server...
+// Cleaning up...
+// The three dots must blink so that it looks like a real terminal -->
