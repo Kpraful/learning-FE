@@ -33,7 +33,6 @@
         }
 
         .button-div {
-            border-radius: 2px;
             background-color: rgb(174, 164, 164);
             border-radius: 9px;
             height: 100px;
@@ -41,6 +40,12 @@
             border-color: black;
             cursor: pointer;
         }
+
+        p {
+            color: green;
+            font-size: 25px;
+        }
+
     </style>
 </head>
 
@@ -61,28 +66,29 @@
             "Password files Detected",
             "Sending all passwords and personal files to server",
             "Cleaning up"
-        ]
+        ];
 
         function sleep(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
         async function hackingStarting(index) {
             const randomDelay = Math.random() * 10000; // Random delay between 0 and 10 seconds
-            // Wait for the random delay
-            await sleep(randomDelay);
             const newPara = document.createElement('p');
             newPara.innerHTML = `${index}`;
-            newPara.style.color = "green";
-            newPara.style.fontSize = "34px"
+            var myNewPara = newPara
             mid_div.appendChild(newPara);
             let count=0;
-            var t = setInterval(()=>{
+            const t = setInterval(()=>{
                 count++;
                 count=count%4;
-                mid_div.lastElementChild.innerHTML = `${index}${'.'.repeat(count)}`;
+                newPara.innerHTML = `${index}${'.'.repeat(count)}`;
                 // console.log(count);
             },700)
-
+            await sleep(randomDelay);
+            clearInterval(t); // Stop the animation for this line
+            newPara.innerHTML = `${index}...`; // Finalize the current line
+            myNewPara.innerHTML= "childObjectChanges";
+            console.log(myNewPara.innerHTML)
         }
 
         button.addEventListener('click', async function () {
@@ -91,7 +97,6 @@
                 await hackingStarting(line); // Display each line one by one
             }
             
-            clearInterval(t);
         })
     </script>
 </body>
